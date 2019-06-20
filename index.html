@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>金石堂湊免運文具</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="icon" href="img/icon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div class="header">
+		金石堂湊免運衝衝衝！
+		共爬了 <span><%= result.length %> 件</span>商品
+	</div>
+	
+	<!-- 10元(含)以下 -->
+	<div id="panel_1" class="panel">
+		<div class="stickynav">
+			<div class="titlebox">10元(含)以下</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<% for(var i=0;i<result.length;i++){ %>
+					<% if(result[i].price<=10){ %>
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+							<div class="box">
+								<div class="imgbox">
+									<img src=<%= result[i].photo %>>
+								</div>
+								<div class="textbox">
+									<div class="title">
+										<a href=<%= result[i].link %> target="_blank" title=<%= result[i].title_2 %>>
+											<%= result[i].title %>
+										</a>
+									</div>
+									<div class="price">
+										<span class="discount"><%= result[i].discount %>&nbsp;折<span>
+										<span class="money"><%= result[i].price %>&nbsp;元<span>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+	<!-- 11~15元 -->
+	<div id="panel_2" class="panel">
+		<div class="stickynav">
+			<div class="titlebox">11~15元</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<% for(var i=0;i<result.length;i++){ %>
+					<% if(result[i].price<=15 && result[i].price>=11){ %>
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+							<div class="box">
+								<div class="imgbox">
+									<img src=<%= result[i].photo %>>
+								</div>
+								<div class="textbox">
+									<div class="title">
+										<a href=<%= result[i].link %> target="_blank" title=<%= result[i].title_2 %>>
+											<%= result[i].title %>
+										</a>
+									</div>
+									<div class="price">
+										<span class="discount"><%= result[i].discount %>&nbsp;折<span>
+										<span class="money"><%= result[i].price %>&nbsp;元<span>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+	<!-- 16~20元 -->
+	<div id="panel_3" class="panel">
+		<div class="stickynav">
+			<div class="titlebox">16~20元</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<% for(var i=0;i<result.length;i++){ %>
+					<% if(result[i].price<=20 && result[i].price>=16){ %>
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+							<div class="box">
+								<div class="imgbox">
+									<img src=<%= result[i].photo %>>
+								</div>
+								<div class="textbox">
+									<div class="title">
+										<a href=<%= result[i].link %> target="_blank" title=<%= result[i].title_2 %>>
+											<%= result[i].title %>
+										</a>
+									</div>
+									<div class="price">
+										<span class="discount"><%= result[i].discount %>&nbsp;折<span>
+										<span class="money"><%= result[i].price %>&nbsp;元<span>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<!-- 21~25元 -->
+	<div id="panel_4" class="panel">
+		<div class="stickynav">
+			<div class="titlebox">21~25元</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<% for(var i=0;i<result.length;i++){ %>
+					<% if(result[i].price<=25 && result[i].price>=21){ %>
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+							<div class="box">
+								<div class="imgbox">
+									<img src=<%= result[i].photo %>>
+								</div>
+								<div class="textbox">
+									<div class="title">
+										<a href=<%= result[i].link %> target="_blank" title=<%= result[i].title_2 %>>
+											<%= result[i].title %>
+										</a>
+									</div>
+									<div class="price">
+										<span class="discount"><%= result[i].discount %>&nbsp;折<span>
+										<span class="money"><%= result[i].price %>&nbsp;元<span>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+	<!-- 26元(含)以上 -->
+	<div id="panel_5" class="panel">
+		<div class="stickynav">
+			<div class="titlebox">26元(含)以上</div>
+		</div>	
+
+		<div class="container-fluid">
+			<div class="row">
+				<% for(var i=0;i<result.length;i++){ %>
+					<% if(result[i].price>=26){ %>
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+							<div class="box">
+								<div class="imgbox">
+									<img src=<%= result[i].photo %>>
+								</div>
+								<div class="textbox">
+									<div class="title">
+										<a href=<%= result[i].link %> target="_blank" title=<%= result[i].title_2 %>>
+											<%= result[i].title %>
+										</a>
+									</div>
+									<div class="price">
+										<span class="discount"><%= result[i].discount %>&nbsp;折<span>
+										<span class="money"><%= result[i].price %>&nbsp;元<span>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+	<div class="menubtn" onclick="javascript:document.querySelector('.fixmenu').style.display='block';">
+		<i class="fas fa-bars"></i>
+	</div>
+	<ul class="fixmenu">
+		<i class="fas fa-window-close" onclick="javascript:document.querySelector('.fixmenu').style.display='none';"></i>
+		<li>
+			<a href="#panel_1" onclick="javascript:document.querySelector('.fixmenu').style.display='none';">10 元(含)以下</a>
+		</li>
+		<li>
+			<a href="#panel_2" onclick="javascript:document.querySelector('.fixmenu').style.display='none';">11~15 元</a>
+		</li>
+		<li>
+			<a href="#panel_3" onclick="javascript:document.querySelector('.fixmenu').style.display='none';">16~20 元</a>
+		</li>
+		<li>
+			<a href="#panel_4" onclick="javascript:document.querySelector('.fixmenu').style.display='none';">21~25 元</a>
+		</li>
+		<li>
+			<a href="#panel_5" onclick="javascript:document.querySelector('.fixmenu').style.display='none';">26 元(含)以上</a>
+		</li>
+	</ul>
+
+	<div class="footer">
+		※ 如有侵權請告知，會立即撤掉<br>
+		Copyright&copy;2019, NTUB 10636007.
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

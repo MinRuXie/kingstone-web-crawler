@@ -1,0 +1,180 @@
+html, body, ul ,li {
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	width: 100%;
+	background: #574536;
+	color: #FFF;
+	padding: 20px;
+}
+
+.footer {
+	position: relative;
+	width: 100%;
+	background: #574536;
+	color: #FFF;
+	padding: 20px;
+	bottom: 0;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.header span {
+	font-size: 25px;
+}
+
+.panel {
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.stickynav {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.titlebox {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: #FFF;
+	background: #D9AE90;
+	font-size: 25px;
+	text-align: center;
+}
+
+.box {
+	width: 100%;
+	min-width: 300px;
+	height: 100px;
+	border: 1px solid #D9AE90;
+	box-shadow: 1px 1px 3px #D9AE90;
+	border-radius: 5px;
+	background-color: #FFF;
+	float: left;
+	margin-top: 10px;
+	padding-right: 5px;
+	display: flex;
+	flex-direction: row; /*排列的順序: 列的(左右排)*/
+	overflow: hidden;
+}
+
+.box .imgbox {
+	display: flex;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.box .imgbox img {
+	width: 100%;
+	height: 100%;
+}
+
+.box .textbox {
+	display: flex;
+	flex-direction: column; /*排列的順序: 欄的(上下排)*/
+	flex-grow: 1; /*剩餘寬度的幾人份((父容器寬度-100px)/1人分)*/
+	float: left;
+	width: 200px;
+	height: 100%;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+}
+
+.box .textbox .title {
+	height: 50%;
+	font-size: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.box .textbox .title a {
+	text-decoration: none;
+	color: #B6835F;
+}
+
+.box .textbox .title a:hover {
+	color: #925F3A;
+}
+
+.box .textbox .price {
+	height: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.box .textbox .price .discount {
+	font-size: 15px;
+	color: #B19793;
+}
+
+.box .textbox .price .money {
+	font-size: 20px;
+	color: #993323;
+	font-weight: 600;
+}
+
+.menubtn {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	border: 1px solid #D9AE90;
+	box-shadow: 1px 1px 3px #D9AE90;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.menubtn i {
+	color: #D9AE90;
+}
+
+.fixmenu {
+	display: none;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 200px;
+	background: #FFF;
+	list-style-type: none;
+	padding: 15px 20px;
+	border: 1px solid #D9AE90;
+	box-shadow: 1px 1px 3px #D9AE90;
+	border-radius: 5px;
+	margin-bottom: 0;
+	z-index: 3;
+}
+
+.fixmenu i {
+	color: #D9AE90;
+	float: right;
+	cursor: pointer;
+}
+
+.fixmenu li {
+	height: 30px;
+	line-height: 30px;
+}
+
+.fixmenu li a {
+	color: #D9AE90;
+}
+
+* {
+	font-family: 'Noto Sans TC', sans-serif;
+}
