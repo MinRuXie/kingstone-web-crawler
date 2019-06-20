@@ -22,8 +22,8 @@ app.get('/', function(req, res){
 	res.render(__dirname + "/index.html", {result: result});
 });
 
-// 3000 port
-app.listen(3000, function(){
+// Heroku 設定 或 3000 port
+app.listen(process.env.PORT || 3000, function(){
 	console.log("port 3000");
 });
 
