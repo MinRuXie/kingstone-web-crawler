@@ -28,7 +28,7 @@ app.listen(3000, function(){
 });
 
 var result = []; //存放爬下來的資料
-getDatas(50); //爬n頁
+getDatas(10); //爬n頁
 
 // 依價格排序資料(低到高)
 function sortData(){
