@@ -24,9 +24,6 @@ NTUB 網頁設計課的期末作業
 
 ## 專案畫面
 
-### 畫面
-<img src="https://i.imgur.com/Un61Yyy.gif" width="500">
-
 #### 電腦版
 <img src="https://i.imgur.com/O1dyrls.png" width="500">
 
