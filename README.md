@@ -28,10 +28,10 @@ NTUB 網頁設計課的期末作業
 <img src="https://i.imgur.com/O1dyrls.png" width="500">
 
 #### 平板
-<img src="https://i.imgur.com/Aa8vkl3.png" width="500">
+<img src="https://i.imgur.com/Aa8vkl3.png" width="400">
 
 #### 手機板
-<img src="https://i.imgur.com/StABd5w.png" width="500">
+<img src="https://i.imgur.com/StABd5w.png" width="300">
 
 #### Menu 特寫
 <img src="https://i.imgur.com/5qamtk4.png" width="300">
