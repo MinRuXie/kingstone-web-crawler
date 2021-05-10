@@ -1,37 +1,37 @@
-# Node.js ���αM��
-NTUB �����]�p�Ҫ������@�~
-�� ���p�� Heroku�A�K�O�Τ�ҥH�n��ɶ��s����
+# Node.js 爬蟲專案
+* NTUB 網頁設計課的期末作業
 
-## �}�o�u��
-### Node.js �M��
-* express
-* ejs
-* request
-* cheerio
+## 部署
+* 部署於 Heroku，免費用戶所以要花時間叫醒它
 
-### �e������
+## 開發工具
 * HTML
 * CSS
 * Bootstrap
+* Node.js 套件
+    * express
+    * ejs
+    * request
+    * cheerio
 
-## �M�צW��
-���۰��K�B�ĽĽġI
+## 專案名稱
+金石堂湊免運衝衝衝！
 
-## �M�׻���
-�b���۰�R�F�観�浧�q��F 350 ���Y�i�K�B�O���W�w�A���ɭԴN�t�X�����S�����D�n�ꤰ��ɡA�i�ϥΦ��M�קֳt�s���C������C
+## 專案說明
+在金石堂買東西有單筆訂單達 350 元即可免運費的規定，有時候就差幾元但又不知道要湊什麼時，可使用此專案快速瀏覽低單價文具。
 
-��Ƥ��w�L�o�u����v�Ρu�����v�ӫ~�A�è̻���϶�������ơA�B����O�ѧC�ܰ��ƧǡA�i�H���ݨ�̫K�y���ӫ~~~
+資料中已過濾「停售」及「絕版」商品，並依價格區間分類資料，且價格是由低至高排序，可以先看到最便宜的商品~~
 
-## �M�׵e��
+## 專案畫面
 
-#### �q����
+#### 電腦版
 <img src="https://i.imgur.com/O1dyrls.png" width="500">
 
-#### ���O
+#### 平板
 <img src="https://i.imgur.com/Aa8vkl3.png" width="400">
 
-#### ����O
+#### 手機板
 <img src="https://i.imgur.com/StABd5w.png" width="300">
 
-#### Menu �S�g
+#### Menu 特寫
 <img src="https://i.imgur.com/5qamtk4.png" width="300">
